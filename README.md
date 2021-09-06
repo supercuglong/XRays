@@ -3,8 +3,8 @@ XRays LOL Script:
 Forked from : https://github.com/orkido/LViewLoL
 
 News:
-  Remove Boost python
-  Add LUA support
+  Remove boost.python,
+  Add LUA script support,
   ...
   
 LUA Interface:
