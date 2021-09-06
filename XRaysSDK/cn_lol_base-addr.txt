@@ -1,0 +1,50 @@
+游戏版本号:55504552     '0x034EEEA8
+oHookGetObject:10185329  '0x009B6A71
+oGameTime:55393368  '0x034D3C58
+oWorldToScreen:14108576  '0x00D747A0
+oLocalPlayer:55425308  '0x034DB91C    oLocalPlayer:55425308  '0x034DB91C,--For UC
+OnProcessSpell3:9405259  '0x008F834B
+OnProcessSpell4:9405250  '0x008F8342
+OnProcessSpell6:9348234  '0x008EA48A
+OnDeleteProcessSpell:9401299  '0x008F73D3
+oGetAttackCastDelay:6767632  '0x00674410
+oGetAttackDelay:06767888  '0x00674510
+oMouse:29618652  '0x01C3F1DC
+oUnderMouseObject:29426184  '0x01C10208,xxxxxxxxxxxxxxxxx
+攻击移动call:5658960  '0x00565950
+选中对象:55371496  '0x034CE6E8
+面板基址:55371496  '0x034CE6E8
+打字基址2:55553100  '0x034FAC4C
+小地图:55425316  '0x034DB924
+喊话call:09902720  '0x00971A80
+颜色格式                <文件本长度:58>
+OnBuyGoods                      xxxxxxxxxxxxxx
+oDrawCircle:09473520  '0x00908DF0    oDrawCircle:09473520  '0x00908DF0,For UC
+herolist:29610404  '0x01C3D1A4
+MinionList:55371148  '0x034CE58C
+MissileList:55422172  '0x034DACDC
+TurretList:55388928  '0x034D2B00
+InhibitorList:55429112  '0x034DC7F8
+oGetNextObject:06780176  '0x00677510
+oGetFirstObject:06777616  '0x00676B10
+SpellBook                       9048
+NetworkID                       204
+SpellSlot                       1144
+Fix                     11052
+BuffManager                     8628
+ObjManager:29618592  '0x01C3F1A0
+技能一级偏移                    8364
+技能一级偏移2                   10188
+IsTargetable:05850624  '0x00594600    IsTargetable:05850624  '0x00594600,For-UC
+IsHero:05928176  '0x005A74F0
+IsAlive:05850624  '0x00594600
+IsBaron:05658784  '0x005658A0
+IsDragon:05650704  '0x00563910
+IsInhib:05927792  '0x005A7370
+IsNexus:05928048  '0x005A7470
+IsTurret:05928672  '0x005A76E0
+IsMinion:05928240  '0x005A7530
+IsNotWall:13591728  '0x00CF64B0
+IsNotGrass:13592080  '0x00CF6610
+NetClinet:55459008  '0x034E3CC0
+ObjName:00000108  '0x0000006C,原来的值是 108

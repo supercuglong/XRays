@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{B1847FC4-24EC-448C-8478-1AF955EF2C28}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>winstealer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>XRays</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>XRays</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>XRays</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_SILENCE_CXX17_OLD_ALLOCATOR_MEMBERS_DEPRECATION_WARNING;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)XRays\external_includes\lua_bridge;$(SolutionDir)XRays\external_includes\lua;$(SolutionDir)XRays\external_includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <IntelJCCErratum />
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)XRays\external_libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>d3d11.lib;dxgi.lib;dcomp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_SILENCE_CXX17_OLD_ALLOCATOR_MEMBERS_DEPRECATION_WARNING;WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)XRays\includes\lua_bridge;$(SolutionDir)XRays\includes\lua;$(SolutionDir)XRays\includes\imgui;$(SolutionDir)XRays\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableLanguageExtensions>
+      </DisableLanguageExtensions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>d3d11.lib;dxgi.lib;dcomp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AntiCrack.cpp" />
+    <ClCompile Include="AntiCRC.cpp" />
+    <ClCompile Include="AntiDebug.cpp" />
+    <ClCompile Include="AntiScan.cpp" />
+    <ClCompile Include="ConfigSet.cpp" />
+    <ClCompile Include="curl_srv.cpp" />
+    <ClCompile Include="GameData.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="includes\imgui\backends\imgui_impl_dx11.cpp" />
+    <ClCompile Include="includes\imgui\backends\imgui_impl_win32.cpp" />
+    <ClCompile Include="includes\imgui\imgui.cpp" />
+    <ClCompile Include="includes\imgui\imgui_draw.cpp" />
+    <ClCompile Include="includes\imgui\imgui_tables.cpp" />
+    <ClCompile Include="includes\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="includes\lua\lapi.c" />
+    <ClCompile Include="includes\lua\lauxlib.c" />
+    <ClCompile Include="includes\lua\lbaselib.c" />
+    <ClCompile Include="includes\lua\lbitlib.c" />
+    <ClCompile Include="includes\lua\lcode.c" />
+    <ClCompile Include="includes\lua\lcorolib.c" />
+    <ClCompile Include="includes\lua\lctype.c" />
+    <ClCompile Include="includes\lua\ldblib.c" />
+    <ClCompile Include="includes\lua\ldebug.c" />
+    <ClCompile Include="includes\lua\ldo.c" />
+    <ClCompile Include="includes\lua\ldump.c" />
+    <ClCompile Include="includes\lua\lfunc.c" />
+    <ClCompile Include="includes\lua\lgc.c" />
+    <ClCompile Include="includes\lua\linit.c" />
+    <ClCompile Include="includes\lua\liolib.c" />
+    <ClCompile Include="includes\lua\llex.c" />
+    <ClCompile Include="includes\lua\lmathlib.c" />
+    <ClCompile Include="includes\lua\lmem.c" />
+    <ClCompile Include="includes\lua\loadlib.c" />
+    <ClCompile Include="includes\lua\lobject.c" />
+    <ClCompile Include="includes\lua\lopcodes.c" />
+    <ClCompile Include="includes\lua\loslib.c" />
+    <ClCompile Include="includes\lua\lparser.c" />
+    <ClCompile Include="includes\lua\lstate.c" />
+    <ClCompile Include="includes\lua\lstring.c" />
+    <ClCompile Include="includes\lua\lstrlib.c" />
+    <ClCompile Include="includes\lua\ltable.c" />
+    <ClCompile Include="includes\lua\ltablib.c" />
+    <ClCompile Include="includes\lua\ltm.c" />
+    <ClCompile Include="includes\lua\lundump.c" />
+    <ClCompile Include="includes\lua\lutf8lib.c" />
+    <ClCompile Include="includes\lua\lvm.c" />
+    <ClCompile Include="includes\lua\lzio.c" />
+    <ClCompile Include="Injector.h" />
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="ItemSlot.cpp" />
+    <ClCompile Include="Logging.cpp" />
+    <ClCompile Include="MemoryReader.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MapObject.cpp" />
+    <ClCompile Include="Offsets.cpp" />
+    <ClCompile Include="GameRenderer.cpp" />
+    <ClCompile Include="LuaScript.cpp" />
+    <ClCompile Include="LuaScriptMgr.cpp" />
+    <ClCompile Include="Spell.cpp" />
+    <ClCompile Include="RenderEngine.cpp" />
+    <ClCompile Include="SpellInfo.cpp" />
+    <ClCompile Include="SpellInterface.h" />
+    <ClCompile Include="Texture2D.cpp" />
+    <ClCompile Include="UnitInfo.cpp" />
+    <ClCompile Include="Utils.cpp" />
+    <ClCompile Include="Vector.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AntiCrack.h" />
+    <ClInclude Include="AntiCRC.h" />
+    <ClInclude Include="AntiDebug.h" />
+    <ClInclude Include="AntiScan.h" />
+    <ClInclude Include="Benchmark.h" />
+    <ClInclude Include="BuffInstance.h" />
+    <ClInclude Include="ConfigSet.h" />
+    <ClInclude Include="curl_srv.h" />
+    <ClInclude Include="GameData.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="HidePEB.h" />
+    <ClInclude Include="includes\imgui\backends\imgui_impl_dx11.h" />
+    <ClInclude Include="includes\imgui\backends\imgui_impl_win32.h" />
+    <ClInclude Include="includes\imgui\imconfig.h" />
+    <ClInclude Include="includes\imgui\imgui.h" />
+    <ClInclude Include="includes\imgui\imgui_internal.h" />
+    <ClInclude Include="includes\imgui\imstb_rectpack.h" />
+    <ClInclude Include="includes\imgui\imstb_textedit.h" />
+    <ClInclude Include="includes\imgui\imstb_truetype.h" />
+    <ClInclude Include="includes\json.hpp" />
+    <ClInclude Include="includes\lua\lapi.h" />
+    <ClInclude Include="includes\lua\lauxlib.h" />
+    <ClInclude Include="includes\lua\lcode.h" />
+    <ClInclude Include="includes\lua\lctype.h" />
+    <ClInclude Include="includes\lua\ldebug.h" />
+    <ClInclude Include="includes\lua\ldo.h" />
+    <ClInclude Include="includes\lua\lfunc.h" />
+    <ClInclude Include="includes\lua\lgc.h" />
+    <ClInclude Include="includes\lua\llex.h" />
+    <ClInclude Include="includes\lua\llimits.h" />
+    <ClInclude Include="includes\lua\lmem.h" />
+    <ClInclude Include="includes\lua\lobject.h" />
+    <ClInclude Include="includes\lua\lopcodes.h" />
+    <ClInclude Include="includes\lua\lparser.h" />
+    <ClInclude Include="includes\lua\lprefix.h" />
+    <ClInclude Include="includes\lua\lstate.h" />
+    <ClInclude Include="includes\lua\lstring.h" />
+    <ClInclude Include="includes\lua\ltable.h" />
+    <ClInclude Include="includes\lua\ltm.h" />
+    <ClInclude Include="includes\lua\lua.h" />
+    <ClInclude Include="includes\lua\lua.hpp" />
+    <ClInclude Include="includes\lua\luaconf.h" />
+    <ClInclude Include="includes\lua\lualib.h" />
+    <ClInclude Include="includes\lua\lundump.h" />
+    <ClInclude Include="includes\lua\lvm.h" />
+    <ClInclude Include="includes\lua\lzio.h" />
+    <ClInclude Include="includes\lua_bridge\Array.h" />
+    <ClInclude Include="includes\lua_bridge\List.h" />
+    <ClInclude Include="includes\lua_bridge\LuaBridge.h" />
+    <ClInclude Include="includes\lua_bridge\Map.h" />
+    <ClInclude Include="includes\lua_bridge\Optional.h" />
+    <ClInclude Include="includes\lua_bridge\RefCountedObject.h" />
+    <ClInclude Include="includes\lua_bridge\RefCountedPtr.h" />
+    <ClInclude Include="includes\lua_bridge\UnorderedMap.h" />
+    <ClInclude Include="includes\lua_bridge\Vector.h" />
+    <ClInclude Include="includes\stb_image.h" />
+    <ClInclude Include="ItemSlot.h" />
+    <ClInclude Include="Offsets.h" />
+    <ClInclude Include="TargetSelector.h" />
+    <ClInclude Include="Texture2D.h" />
+    <ClInclude Include="ItemInfo.h" />
+    <ClInclude Include="MapObject.h" />
+    <ClInclude Include="LuaGameInterface.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="MemoryReader.h" />
+    <ClInclude Include="MemoryLoadable.h" />
+    <ClInclude Include="MemSnapshot.h" />
+    <ClInclude Include="LuaGUIInterface.h" />
+    <ClInclude Include="GameRenderer.h" />
+    <ClInclude Include="LuaScript.h" />
+    <ClInclude Include="LuaScriptMgr.h" />
+    <ClInclude Include="Spell.h" />
+    <ClInclude Include="RenderEngine.h" />
+    <ClInclude Include="SpellInfo.h" />
+    <ClInclude Include="UnitInfo.h" />
+    <ClInclude Include="Utils.h" />
+    <ClInclude Include="DirectSyscall.h" />
+    <ClInclude Include="Vector.h" />
+    <ClInclude Include="VEH.h" />
+    <MASM Include="DirectSyscall.asm">
+      <PreserveIdentifierCase Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">0</PreserveIdentifierCase>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">3</WarningLevel>
+      <EnableMASM51Compatibility Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </EnableMASM51Compatibility>
+    </MASM>
+    <MASM Include="FKVM.asm" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LuaExport.inc">
+      <FileType>Document</FileType>
+    </ClInclude>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

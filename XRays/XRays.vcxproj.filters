@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="gui">
+      <UniqueIdentifier>{32136a6d-8cd7-4799-985c-41045dbdfc59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lua">
+      <UniqueIdentifier>{90f5d9fd-320f-4821-8413-997919c77484}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lua\headers">
+      <UniqueIdentifier>{21402cd0-59cc-4479-b26b-37b27631648e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lua\sources">
+      <UniqueIdentifier>{151740fa-0d4f-441e-b69c-75b9cb52d9a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lua\bridge">
+      <UniqueIdentifier>{8114e215-d2ba-40ab-b8e6-5d3e5a0bf29f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lua\script_mgr">
+      <UniqueIdentifier>{cb5cb015-d984-4851-ac96-68323d601b9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{d28b0c84-0437-4186-bf25-e02b6db8c8c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="meta">
+      <UniqueIdentifier>{c41e4a3e-5831-4f46-b805-716fdeccd807}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="meta\game">
+      <UniqueIdentifier>{3f16e38a-ff17-45e9-9c82-26e29044bd89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="meta\game\spells">
+      <UniqueIdentifier>{a2f140b9-3045-40da-be66-60eabf10af5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="meta\game\units">
+      <UniqueIdentifier>{f24696f8-27e0-4883-9478-56065f8048e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="meta\game\data">
+      <UniqueIdentifier>{0ffb7377-39cd-40f3-8539-0eba6297aefe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="meta\game\others">
+      <UniqueIdentifier>{c139ef89-3486-4f32-bff6-8e82d5fe5a24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdparty">
+      <UniqueIdentifier>{7ab4a644-702d-449c-b876-0ddde6ddd978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdparty\imgui">
+      <UniqueIdentifier>{462e78dd-f859-45e0-8411-dd4643618c9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdparty\stb_image">
+      <UniqueIdentifier>{890199b9-57ab-45fd-bd47-9b8cd568f133}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{896ec100-64c0-4b57-aba6-5b62f361dff3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lua\script_mgr\ai_targeting">
+      <UniqueIdentifier>{137138ce-b89b-4cb9-b45a-cbd086af772b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils\hide_process">
+      <UniqueIdentifier>{d8ecf42f-4b03-4675-a8ed-46dae030d30c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils\hook_framework">
+      <UniqueIdentifier>{93625b35-f62d-46f9-a686-b42609dd08a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils\injector">
+      <UniqueIdentifier>{97228fac-6e8f-4e20-8122-f951555b627c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils\json_parser">
+      <UniqueIdentifier>{6b944e61-0f9e-452a-a01e-c8faf550c7fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils\curl_http_srv">
+      <UniqueIdentifier>{1c11652d-2964-4ead-a6a5-4f0bf06fa7a9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Utils.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigSet.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="AntiCrack.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryReader.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="Offsets.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderEngine.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="Spell.cpp">
+      <Filter>meta\game\spells</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>meta\game\units</Filter>
+    </ClCompile>
+    <ClCompile Include="GameData.cpp">
+      <Filter>meta\game\data</Filter>
+    </ClCompile>
+    <ClCompile Include="SpellInfo.cpp">
+      <Filter>meta\game\spells</Filter>
+    </ClCompile>
+    <ClCompile Include="SpellInterface.h">
+      <Filter>meta\game\spells</Filter>
+    </ClCompile>
+    <ClCompile Include="UnitInfo.cpp">
+      <Filter>meta\game\units</Filter>
+    </ClCompile>
+    <ClCompile Include="MapObject.cpp">
+      <Filter>meta\game\data</Filter>
+    </ClCompile>
+    <ClCompile Include="GameRenderer.cpp">
+      <Filter>meta\game\others</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture2D.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemSlot.cpp">
+      <Filter>meta\game\others</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaScript.cpp">
+      <Filter>lua\script_mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaScriptMgr.cpp">
+      <Filter>lua\script_mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\imgui\imgui.cpp">
+      <Filter>3rdparty\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\imgui\imgui_draw.cpp">
+      <Filter>3rdparty\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\imgui\imgui_tables.cpp">
+      <Filter>3rdparty\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\imgui\imgui_widgets.cpp">
+      <Filter>3rdparty\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\lua\lzio.c">
+      <Filter>lua\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\lua\lvm.c">
+      <Filter>lua\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\lua\lutf8lib.c">
+      <Filter>lua\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\lua\lundump.c">
+      <Filter>lua\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\lua\ltm.c">
+      <Filter>lua\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\lua\ltablib.c">
+      <Filter>lua\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\lua\ltable.c">
+      <Filter>lua\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\lua\lstrlib.c">
+      <Filter>lua\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\lua\lstring.c">
+      <Filter>lua\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\lua\lstate.c">
+      <Filter>lua\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\lua\lparser.c">
+      <Filter>lua\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\lua\loslib.c">
+      <Filter>lua\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\lua\lopcodes.c">
+      <Filter>lua\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\lua\lobject.c">
+      <Filter>lua\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\lua\loadlib.c">
+      <Filter>lua\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\lua\lmem.c">
+      <Filter>lua\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\lua\lmathlib.c">
+      <Filter>lua\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\lua\llex.c">
+      <Filter>lua\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\lua\liolib.c">
+      <Filter>lua\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\lua\linit.c">
+      <Filter>lua\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\lua\lgc.c">
+      <Filter>lua\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\lua\lfunc.c">
+      <Filter>lua\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\lua\ldump.c">
+      <Filter>lua\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\lua\ldo.c">
+      <Filter>lua\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\lua\ldebug.c">
+      <Filter>lua\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\lua\ldblib.c">
+      <Filter>lua\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\lua\lctype.c">
+      <Filter>lua\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\lua\lcorolib.c">
+      <Filter>lua\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\lua\lcode.c">
+      <Filter>lua\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\lua\lbitlib.c">
+      <Filter>lua\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\lua\lbaselib.c">
+      <Filter>lua\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\lua\lauxlib.c">
+      <Filter>lua\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\lua\lapi.c">
+      <Filter>lua\sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Injector.h">
+      <Filter>utils\injector</Filter>
+    </ClCompile>
+    <ClCompile Include="AntiDebug.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="AntiCRC.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="AntiScan.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Logging.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="curl_srv.cpp">
+      <Filter>utils\curl_http_srv</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\imgui\backends\imgui_impl_dx11.cpp">
+      <Filter>3rdparty\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\imgui\backends\imgui_impl_win32.cpp">
+      <Filter>3rdparty\imgui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Utils.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigSet.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="MemSnapshot.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="AntiCrack.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryReader.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderEngine.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Spell.h">
+      <Filter>meta\game\spells</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>meta\game\units</Filter>
+    </ClInclude>
+    <ClInclude Include="Benchmark.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="GameData.h">
+      <Filter>meta\game\data</Filter>
+    </ClInclude>
+    <ClInclude Include="SpellInfo.h">
+      <Filter>meta\game\spells</Filter>
+    </ClInclude>
+    <ClInclude Include="UnitInfo.h">
+      <Filter>meta\game\units</Filter>
+    </ClInclude>
+    <ClInclude Include="MapObject.h">
+      <Filter>meta\game\data</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryLoadable.h">
+      <Filter>meta\game\others</Filter>
+    </ClInclude>
+    <ClInclude Include="GameRenderer.h">
+      <Filter>meta\game\others</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture2D.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemInfo.h">
+      <Filter>meta\game\others</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemSlot.h">
+      <Filter>meta\game\others</Filter>
+    </ClInclude>
+    <ClInclude Include="Offsets.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="BuffInstance.h">
+      <Filter>meta\game\units</Filter>
+    </ClInclude>
+    <MASM Include="DirectSyscall.asm">
+      <Filter>utils</Filter>
+    </MASM>
+    <ClInclude Include="DirectSyscall.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="TargetSelector.h">
+      <Filter>lua\script_mgr\ai_targeting</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaGUIInterface.h">
+      <Filter>lua\script_mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaGameInterface.h">
+      <Filter>lua\script_mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaScript.h">
+      <Filter>lua\script_mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaScriptMgr.h">
+      <Filter>lua\script_mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\stb_image.h">
+      <Filter>3rdparty\stb_image</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\imgui\imconfig.h">
+      <Filter>3rdparty\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\imgui\imgui.h">
+      <Filter>3rdparty\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\imgui\imgui_internal.h">
+      <Filter>3rdparty\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\imgui\imstb_rectpack.h">
+      <Filter>3rdparty\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\imgui\imstb_textedit.h">
+      <Filter>3rdparty\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\imgui\imstb_truetype.h">
+      <Filter>3rdparty\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\lua_bridge\Array.h">
+      <Filter>lua\bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\lua_bridge\List.h">
+      <Filter>lua\bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\lua_bridge\LuaBridge.h">
+      <Filter>lua\bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\lua_bridge\Map.h">
+      <Filter>lua\bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\lua_bridge\Optional.h">
+      <Filter>lua\bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\lua_bridge\RefCountedObject.h">
+      <Filter>lua\bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\lua_bridge\RefCountedPtr.h">
+      <Filter>lua\bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\lua_bridge\UnorderedMap.h">
+      <Filter>lua\bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\lua_bridge\Vector.h">
+      <Filter>lua\bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\lua\lzio.h">
+      <Filter>lua\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\lua\lvm.h">
+      <Filter>lua\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\lua\lundump.h">
+      <Filter>lua\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\lua\lualib.h">
+      <Filter>lua\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\lua\luaconf.h">
+      <Filter>lua\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\lua\lua.hpp">
+      <Filter>lua\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\lua\lua.h">
+      <Filter>lua\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\lua\ltm.h">
+      <Filter>lua\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\lua\ltable.h">
+      <Filter>lua\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\lua\lstring.h">
+      <Filter>lua\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\lua\lstate.h">
+      <Filter>lua\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\lua\lprefix.h">
+      <Filter>lua\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\lua\lparser.h">
+      <Filter>lua\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\lua\lopcodes.h">
+      <Filter>lua\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\lua\lobject.h">
+      <Filter>lua\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\lua\lmem.h">
+      <Filter>lua\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\lua\llimits.h">
+      <Filter>lua\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\lua\llex.h">
+      <Filter>lua\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\lua\lgc.h">
+      <Filter>lua\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\lua\lfunc.h">
+      <Filter>lua\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\lua\ldo.h">
+      <Filter>lua\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\lua\ldebug.h">
+      <Filter>lua\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\lua\lctype.h">
+      <Filter>lua\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\lua\lcode.h">
+      <Filter>lua\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\lua\lauxlib.h">
+      <Filter>lua\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\lua\lapi.h">
+      <Filter>lua\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="HidePEB.h">
+      <Filter>utils\hide_process</Filter>
+    </ClInclude>
+    <ClInclude Include="VEH.h">
+      <Filter>utils\hook_framework</Filter>
+    </ClInclude>
+    <ClInclude Include="AntiDebug.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="AntiCRC.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="AntiScan.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="curl_srv.h">
+      <Filter>utils\curl_http_srv</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\json.hpp">
+      <Filter>utils\json_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\imgui\backends\imgui_impl_dx11.h">
+      <Filter>3rdparty\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\imgui\backends\imgui_impl_win32.h">
+      <Filter>3rdparty\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaExport.inc">
+      <Filter>lua\script_mgr</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="FKVM.asm">
+      <Filter>utils</Filter>
+    </MASM>
+  </ItemGroup>
+</Project>
