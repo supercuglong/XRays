@@ -1,8 +1,8 @@
-XRays:
+XRAYS:
 
 Forked from : https://github.com/orkido/LViewLoL
 
-News:
+NEWS:
 
   Remove boost.python
   
@@ -10,12 +10,12 @@ News:
   
   ...
   
-LUA Interface:
+LUA INTERFACE:
 
   https://github.com/pxps/XRays/blob/main/XRays/LuaExport.inc
   
   
-Build:
+BUILD:
 
    need VS2019
    
@@ -25,7 +25,7 @@ Build:
    
    XRays.exe
    
-CN_LOL:
+LOL_CN:
 
    Need to inject DLL into the process
    
